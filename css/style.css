@@ -3,6 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: 400;
+    background-color:rgba(25,25,25,1);
 }
 
 a {
