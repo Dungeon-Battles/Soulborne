@@ -1,6 +1,22 @@
 body {
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 400;
 }
+
+a {
+    font-family: 'Raleway', sans-serif;
+    color: aqua;
+    font-weight: 400;
+}
+
+div {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
 .hero {
     background-color: black;
     background-image: url("../images/cover.png");
