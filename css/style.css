@@ -1,3 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.preload{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opcacity 10sec ease;
+}
+section img{
+	height: 200px;
+}
+
+.preload-finish{
+	opacity: 0;
+	pointer-events: none;
+}
+
+.soulborne{
+	animation: soulborne 2s ease alternate;
+}
+
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -33,4 +63,13 @@ div {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@keyframes soulborne{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
