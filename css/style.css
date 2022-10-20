@@ -25,7 +25,7 @@ section img{
 }
 
 .soulborne{
-	animation: soulborne 2s ease alternate;
+	animation: soulborne 2s ease infinite alternate;
 }
 
 body {
