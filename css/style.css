@@ -28,13 +28,53 @@ section img{
 	animation: soulborne 2s ease infinite alternate;
 }
 
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8%;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	padding: 5px;
+	padding-top: 10px;
+}
+
+.logo img{
+	height:auto;
+	width: 70%;
+}
+
+.nav-links{
+	display:flex;
+	justify-content: space-around;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links img{
+	height:auto;
+	width: 50%;
+}
+
+.burger img{
+	height:auto;
+	width: 22%;
+}
+
+.burger{
+	display:none;
+	cursor: pointer;
+}
+
 body {
-    margin: 0;
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: 400;
     background-color:rgba(25,25,25,1);
-}
+} 
 
 a {
     font-family: 'Raleway', sans-serif;
@@ -48,21 +88,31 @@ div {
     font-weight: 600;
 }
 
-.hero {
-    background-color: black;
-    background-image: url("../images/cover.png");
-    background-repeat: repeat;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+@media screen and (max-width: 768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92%;
+		top: 8vh;
+		background-color: rgba(25,25,25,1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+	}
+	.burger{
+		display: block;
+	}
+	ul.nav-links{
+		border: 5px solid white;
+	}
 }
-
-.container {
-    max-width: (960*3)px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.nav-active{
+	transform: translateX(0%);
 }
 
 @keyframes soulborne{
