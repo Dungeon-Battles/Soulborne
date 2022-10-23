@@ -73,7 +73,10 @@ body {
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: 400;
-    background-color:rgba(25,25,25,1);
+    background-image: url('../img/ruins.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
 } 
 
 a {
