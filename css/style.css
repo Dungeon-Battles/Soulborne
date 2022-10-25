@@ -75,15 +75,18 @@ nav{
 	cursor: pointer;
 }
 
+.special{
+	overflow-y: hidden;
+	background-image: url('../img/ruins.jpg');
+}
+
 body {
     font-family: 'Determination', sans-serif;
     color: white;
     font-weight: 400;
-    background-image: url('../img/ruins.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;
-	overflow-y: hidden;
 } 
 
 div {
