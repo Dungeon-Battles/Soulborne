@@ -135,7 +135,7 @@ div {
 	margin-left: 10%;
 	margin-right: 10%;
 	padding: 21px;
-	height: 40vh;
+	height: 30vh;
 	width: 80%;
 	background-color: rgba(25,25,25,1);
 	display: block;
@@ -151,7 +151,7 @@ div {
 .feed{
 	display: block;
 	height: auto;
-	width: 15%;
+	width: 20%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -161,7 +161,7 @@ div {
 	justify-content: space-around;
 	align-items: center;
 	padding: 21px;
-	height: 29vh;
+	height: 33vh;
 	width: 100%;
 	background-color: rgba(25,25,25,1);
 	font-size: 20px;
@@ -173,14 +173,10 @@ div {
 .container img{
 	display: block;
 	height: auto;
-	width: 30%;
+	width: 40%;
 	border-radius: 50%;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.container a{
-	width: 30%;
 }
 
 .container p{
