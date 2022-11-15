@@ -111,6 +111,19 @@ div {
 @media screen and (max-width: 768px){
 	body{
 		overflow-x: hidden;
+		cursor: auto;
+	}
+	a{
+		cursor: auto;
+	}
+	.burger{
+		cursor: pointer;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	.cursor{
+		display: none;
 	}
 	.nav-links{
 		position: absolute;
