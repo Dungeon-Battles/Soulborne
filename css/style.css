@@ -2,10 +2,24 @@
 	font-family: "Determination";
 	src: url(../fonts/DTM-Mono.ttf);
 }
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.cursor{
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+a{
+	cursor: none;
 }
 
 .preload{
@@ -19,7 +33,7 @@
 	align-items: center;
 	transition: opcacity 10sec ease;
 }
-section img{
+.section img{
 	height: 200px;
 }
 
@@ -43,7 +57,7 @@ nav{
 	border-width: 5px;
 	padding: 5px;
 	padding-top: 10px;
-	margin-bottom: 7px;
+	margin-bottom: 1vh;
 }
 
 .logo img{
@@ -72,13 +86,12 @@ nav{
 
 .burger{
 	display:none;
-	cursor: pointer;
+	cursor: none;
 }
 
 .special{
 	background-image: url('../img/ruins.jpg');
 }
-
 body {
     font-family: 'Determination', sans-serif;
     color: white;
@@ -86,7 +99,8 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;  
 	background-size: cover;
-} 
+	cursor: none;
+}
 
 div {
     font-family: 'Determination', sans-serif;
@@ -102,7 +116,7 @@ div {
 		position: absolute;
 		right: 0px;
 		height: 92%;
-		top: 8vh;
+		top: 8%;
 		background-color: rgba(25,25,25,1);
 		display: none;
 		flex-direction: column;
@@ -188,6 +202,8 @@ div {
 	float: left;
 	align-items: center;
 }
+
+
 
 @keyframes soulborne{
 	from{
