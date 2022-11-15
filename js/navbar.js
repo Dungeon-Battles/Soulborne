@@ -23,7 +23,7 @@ function mOver2(obj){
 	obj.src = "./img/sl-update.png";
 }
 function mOut2(obj){
-	obj.src = "./img/update.png";
+	obj.src = "./img/Update.png";
 }
 
 function mOver3(obj){
