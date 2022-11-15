@@ -9,6 +9,7 @@ let navLinks = document.querySelectorAll('.nav-links li');
 window.addEventListener("mousemove", cursor);
 
 function cursor(e){
+	mouseCursor.classList.add("cursor-move");
 	mouseCursor.style.top = e.pageY + 'px';
 	mouseCursor.style.left = e.pageX + 'px';
 }
