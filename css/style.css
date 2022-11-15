@@ -16,6 +16,11 @@
 	pointer-events: none;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+	animation: hideMouse 0.1s ease infinite;
+}
+
+.cursor-move{
+	animation: movedMouse infinite;
 }
 
 a{
@@ -119,12 +124,6 @@ div {
 	.burger{
 		cursor: pointer;
 	}
-	body{
-		overflow-x: hidden;
-	}
-	.cursor{
-		display: none;
-	}
 	.nav-links{
 		position: absolute;
 		right: 0px;
@@ -141,6 +140,9 @@ div {
 	}
 	ul.nav-links{
 		border: 5px solid white;
+	}
+	.cursor{
+		display: none;
 	}
 }
 .nav-active{
@@ -216,7 +218,24 @@ div {
 	align-items: center;
 }
 
+@keyframes hideMouse{
+	from{
+		visibility: hidden;
+	}
+	to{
+		visibility: hidden;
+	}
+	
+}
 
+@keyframes movedMouse{
+	from{
+		visibility: visible;
+	}
+	to{
+		visibility: visible;
+	}
+}
 
 @keyframes soulborne{
 	from{
